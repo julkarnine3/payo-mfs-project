@@ -56,7 +56,7 @@
                 <img class="w-6 mx-auto" src="./assets/purse1.png" alt="">
                 <h1>Pay Bill</h1>
             </div>
-            <div class="bg-[rgba(8,8,8,0.1)]  w-32 h-24 p-4 cursor-pointer text-center rounded-xl drop-shadow-sm ">
+            <div id="transaction-box" class="bg-[rgba(8,8,8,0.1)]  w-32 h-24 p-4 cursor-pointer text-center rounded-xl drop-shadow-sm ">
                 <img class="w-6 mx-auto" src="./assets/transaction1.png" alt="">
                 <h1>Transactions</h1>
             </div>
@@ -73,11 +73,11 @@
                     <form class="card-body">
                         <fieldset class="fieldset">
                             <legend class="fieldset-legend font-bold">Select A Bank</legend>
-                            <select class="select" required>
-                              <option disabled selected>Pick a Bank</option>
+                            <select id="all-bank" class="select" placeholder="pick a bank" required>
+                              
                               <option value="dbsl">DBSL</option>
-                              <option value="sonali">Sonali bank</option>
-                              <option value="islami">Islami bank</option>
+                              <option value="sonali bank">Sonali bank</option>
+                              <option value="islami bank">Islami bank</option>
                             </select >
                             
                           </fieldset>
@@ -127,12 +127,20 @@
                 </div>
               </div>
          </section>
+         <!-- Transaction History section start -->
+          <section id="transaction-section" class="mt-4">
+            <h1 class="font-bold text-2xl">Transaction History</h1>
+            <div id="transaction-container">
+
+            </div>
+          </section>
     </section>
    <!-- <script src="./js/addMoney.js"></script>  -->
     <script src="./js/addmoney1.js"></script>
+    <script src="./js/cashout1.js"></script>
     <script src="./utilities/toggle1.js"></script>
     <script src="./utilities/utilities.js"></script>
    <!-- <script src="./js/toggle.js"></script> -->
-   <script src="./js/cashout.js"></script>
+   <!-- <script src="./js/cashout.js"></script> -->
 </body>
 </html>
